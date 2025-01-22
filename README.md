@@ -1,4 +1,4 @@
-# Laravel 10 透過 E-mail／姓名／電話號碼登入
+# Laravel 11 透過 E-mail／姓名／電話號碼登入
 
 在大部分的情況下，使用者會使用 E-mail 來登入其帳戶，提供使用者可以自行決定進行登入。 
 
@@ -16,9 +16,9 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
 ```sh
-$ php artisan migrate
+$ php artisan migrate --seed
 ```
 - 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/uWtuJ2Y.png)
+![](https://i.imgur.com/Lx1uqWZ.png)
 > 建立新的帳號
 
-![](https://i.imgur.com/DubnZEC.png)
+![](https://i.imgur.com/OvhmeVU.png)
 > 使用現有的帳號登入
